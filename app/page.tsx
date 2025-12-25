@@ -25,7 +25,7 @@ export default function EmployeeGiftTracker() {
   const getData = async () => {
     setLoading(true);
     try {
-      const res = await fetch('/api/employee');
+      const res = await fetch('https://checklist-peach-rho.vercel.app/api/employee');
       const result = await res.json();
 
       const rawData = Array.isArray(result)
