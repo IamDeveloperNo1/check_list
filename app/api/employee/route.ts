@@ -1,20 +1,20 @@
 import { NextResponse } from 'next/server';
-import pool from '@/lib/db';
+// import pool from '@/lib/db';
 // หรือ import { conn } from '@/lib/db';
 
 export async function GET() {
        try {
-              const [rows] = await pool.query(`
-                     SELECT
-                            emp_name,
-                            time_scan,
-                            role_access,
-                            emp_id
-                     FROM
-                            test.employee;`
-              );
+              // const [rows] = await pool.query(`
+              //        SELECT
+              //               emp_name,
+              //               time_scan,
+              //               role_access,
+              //               emp_id
+              //        FROM
+              //               test.employee;`
+              // );
 
-              return NextResponse.json(rows);
+              return NextResponse.json(5);
        } catch (error) {
               console.error('Database error:', error);
               return NextResponse.json(
