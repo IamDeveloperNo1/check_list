@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { Search, Gift, Clock, CheckCircle2, XCircle, Loader2, User } from 'lucide-react';
 
 interface Employee {
